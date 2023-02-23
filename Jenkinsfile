@@ -231,11 +231,10 @@ pipeline {
               sh '''
                PATH=$PATH:/home/jenkins/agent/workspace/test-UD:.
 	       ls -lrth /home/jenkins/agent/workspace/test-UD/gradlew && pwd
-               ./gradlew  -Dmaven.multiModuleProjectDirectory=/home/jenkins/agent/workspace/test-UD/Ug-Customer-Preference-Management/Ug-Customer-Preference-Management sonarqube
-              
-                hostname
+	       hostname
+	       whoami
                 find / -name gradlew 2>/dev/null
-		
+               ./gradlew  -Dmaven.multiModuleProjectDirectory=/home/jenkins/agent/workspace/test-UD/Ug-Customer-Preference-Management/Ug-Customer-Preference-Management sonarqube
               '''
         }
       }
