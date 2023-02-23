@@ -234,6 +234,7 @@ pipeline {
 	       cd  /home/jenkins/agent/workspace/Manu-test-ud
 	       hostname
 	       whoami
+	       sleep 2000
                 find / -name gradlew 2>/dev/null
                ./gradlew  -Dmaven.multiModuleProjectDirectory=/home/jenkins/agent/workspace/Manu-test-ud/Ug-Customer-Preference-Management/Ug-Customer-Preference-Management sonarqube
               '''
