@@ -232,6 +232,8 @@ pipeline {
 	       hostname
 	       whoami
                 find / -name gradlew 2>/dev/null
+		 apt update && apt install -y dos2unix 
+		 dos2unix gradlew
                ./gradlew  -Dmaven.multiModuleProjectDirectory=$(pwd)/Ug-Customer-Preference-Management/Ug-Customer-Preference-Management sonarqube
               '''
         }
