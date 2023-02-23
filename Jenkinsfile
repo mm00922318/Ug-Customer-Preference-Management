@@ -229,12 +229,12 @@ pipeline {
               checkout scm
 	       sh 'pwd&& ls -lrth'
               sh '''
-               PATH=$PATH:/home/jenkins/agent/workspace/test-ud:.
-	       ls -lrth /home/jenkins/agent/workspace/test-ud/gradlew && pwd
+               PATH=$PATH:/home/jenkins/agent/workspace/Manu-test-ud:.
+	       ls -lrth /home/jenkins/agent/workspace/Manu-test-ud/gradlew && pwd
 	       hostname
 	       whoami
                 find / -name gradlew 2>/dev/null
-               ./gradlew  -Dmaven.multiModuleProjectDirectory=/home/jenkins/agent/workspace/test-ud/Ug-Customer-Preference-Management/Ug-Customer-Preference-Management sonarqube
+               ./gradlew  -Dmaven.multiModuleProjectDirectory=/home/jenkins/agent/workspace/Manu-test-ud/Ug-Customer-Preference-Management/Ug-Customer-Preference-Management sonarqube
               '''
         }
       }
