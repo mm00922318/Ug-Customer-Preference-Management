@@ -231,6 +231,7 @@ pipeline {
               sh '''
                PATH=$PATH:/home/jenkins/agent/workspace/Manu-test-ud:.
 	       ls -lrth /home/jenkins/agent/workspace/Manu-test-ud/gradlew && pwd
+	       cd  /home/jenkins/agent/workspace/Manu-test-ud/gradlew
 	       hostname
 	       whoami
 	       sleep 2000
